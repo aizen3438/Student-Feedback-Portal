@@ -1,0 +1,171 @@
+
+/* Basic Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Website Header */
+header {
+    background-color: #173b65;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #24568a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #102d4d;
+}
+
+/* Main Sections */
+section {
+    display: none;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+section.active {
+    display: block;
+}
+
+h2 {
+    color: #173b65;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Home Page */
+.welcome {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+}
+
+/* Buttons */
+.main-button {
+    display: inline-block;
+    background-color: #24568a;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: #173b65;
+}
+
+/* Feedback Form */
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Validation Messages */
+.error {
+    color: #c62828;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Thank You Message */
+.success {
+    color: #237a35;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Page */
+.contact-box {
+    background-color: #edf3fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #173b65;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .welcome h2 {
+        font-size: 23px;
+    }
+}

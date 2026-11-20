@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Feedback Portal</title>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Student Feedback Portal</h1>
+        <p>Your Feedback Helps Us Improve</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="feedback">Feedback Form</a>
+        <a href="#" data-page="contact">Contact Us</a>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="active">
+        <div class="welcome">
+            <h2>Welcome to Student Feedback Portal</h2>
+
+            <p>
+                This portal allows students to share their opinions
+                about courses, teachers and college facilities.
+            </p>
+
+            <p>
+                Your valuable feedback helps us improve the
+                quality of education and student experience.
+            </p>
+
+            <button class="main-button" id="giveFeedback">
+                Give Feedback
+            </button>
+        </div>
+    </section>
+
+    <!-- Feedback Form Page -->
+    <section id="feedback">
+        <h2>Student Feedback Form</h2>
+
+        <p>Please fill in the details and submit your feedback.</p>
+
+        <form id="feedbackForm" novalidate>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name">
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email">
+            <div id="emailError" class="error"></div>
+
+            <label for="course">Select Course:</label>
+            <select id="course">
+                <option value="">Choose your course</option>
+                <option>B.Tech CSE</option>
+                <option>B.Tech CSE (IoT)</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+            <div id="courseError" class="error"></div>
+
+            <label for="rating">Rate Your Experience:</label>
+            <select id="rating">
+                <option value="">Choose rating</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+            <div id="ratingError" class="error"></div>
+
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" rows="5"
+                placeholder="Write your feedback here"></textarea>
+            <div id="messageError" class="error"></div>
+
+            <button type="submit" class="main-button">
+                Submit Feedback
+            </button>
+
+        </form>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+            If you have any questions or suggestions,
+            feel free to contact us.
+        </p>
+
+        <div class="contact-box">
+            <p><strong>Website:</strong> Student Feedback Portal</p>
+            <p><strong>Email:</strong> feedback@example.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Address:</strong> Greater Noida, Uttar Pradesh</p>
+        </div>
+    </section>
+
+    <!-- Thank You Page -->
+    <section id="thankyou">
+        <div class="success">
+            <h2>Thank You!</h2>
+
+            <h3>Your Feedback Has Been Submitted.</h3>
+
+            <p>We appreciate your time and valuable suggestions.</p>
+
+            <button class="main-button" id="backHome">
+                Back to Home
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Student Feedback Portal</p>
+        <p>Designed as a Web Designing Project</p>
+    </footer>
+
+    <!-- Linking JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
